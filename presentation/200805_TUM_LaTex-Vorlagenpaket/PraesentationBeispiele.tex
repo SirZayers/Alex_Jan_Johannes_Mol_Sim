@@ -1,6 +1,9 @@
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage{listings}
+\usepackage{media9}
+
+\addmediapath{./videos/}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TUM-Vorlage: Präsentation - Beispiele
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -135,7 +138,7 @@ for all ParticlePairs (p,p'):
 \vspace{-0.5cm}
 ´\begin{figure}
 	\centering
-	\includegraphics[height=0.5\textheight]{UMLClassDiagram-1}
+	\includegraphics[height=0.5\textheight]{./UMLClassDiagram-1}
 	\label{fig:umlclassdiagram-1}
 \end{figure}
 \end{frame}
@@ -180,15 +183,14 @@ class InputLoader {
 		\large
 		\begin{itemize}
 			\item<1-> Task: Verify the correctness of the program after major refactoring
-			\item<2-> Idea: string-compare the new output with the old output. If the program works as intended it should be the same
-			\item<3-> Observation: Very slight differences in the outputs generated (unoberservable in the videos)
+			\item<2-> Idea: string-compare the new output with the old output, if the program works as intended it should be the same
+			\item<3-> Observation: Minuscule differences in the outputs generated (unobservable in the videos)
 		\end{itemize}
 		\visible<4->{What happened:}
 		\begin{itemize}
-			\item<5-> floating point operations are not associative $\rightarrow$ both outputs were ``correct''
-			\item<6-> probably some compiler magic
-			\item<7-> Funfact: Compiling the exact same code with the exact same compiler settings will result in the same output
-			\item<8-> First-hand encounter with the inaccuracies of numerical programming
+			\item<5-> Floating point operations are not associative $\rightarrow$ both outputs were ``correct''
+			\item<6-> Probably some compiler magic
+			\item<7-> First-hand encounter with the inaccuracies of numerical programming
 		\end{itemize}
 
 \end{frame}
@@ -196,7 +198,11 @@ class InputLoader {
 
 \begin{frame}
 	\frametitle{bloopers}
-	%TODO
+	\includemedia[
+	activate=pagevisible
+	]{broken0.swf}
+	\includemedia[
+	activate=pagevisible]{broken1.swf}
 \end{frame}
 
 \begin{frame}
@@ -205,7 +211,7 @@ class InputLoader {
 	\begin{itemize}
 		\item<1-> Custom CSS Doxygen didn't cooperate
 		\item<2-> Disproportion of time invested $\leftrightarrow$ relevance
-		\item<3-> libxerces, Eigen deplo´yment pain
+		\item<3-> libxerces, Eigen deployment pain
 		\item<4-> Cmake, Doctest details
 		\item<5-> Iterator-related debate
 		\item<6-> Data structure locality (for later exercises)
