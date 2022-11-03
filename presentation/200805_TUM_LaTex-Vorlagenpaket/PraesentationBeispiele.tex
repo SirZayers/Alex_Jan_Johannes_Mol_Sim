@@ -1,9 +1,4 @@
-\usepackage{tikz}
-\usepackage{graphicx}
-\usepackage{listings}
-\usepackage{media9}
 
-\addmediapath{./videos/}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TUM-Vorlage: Präsentation - Beispiele
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -147,7 +142,7 @@ for all ParticlePairs (p,p'):
 	\frametitle{Use of the Program}
 	\vspace{0.7cm}
 	\begin{Verbatim}
-❯ ./MolSim --help
+> ./MolSim --help
 Welcome to MolSim Help
 Usage:
 MolSim <input-files> <options>
@@ -196,13 +191,14 @@ class InputLoader {
 \end{frame}
 \clearpage
 
-\begin{frame}
+\begin{frame}{embedded files}
 	\frametitle{bloopers}
-	\includemedia[
-	activate=pagevisible
-	]{broken0.swf}
-	\includemedia[
-	activate=pagevisible]{broken1.swf}
+	%\includemedia[
+	%	activate=onclick,
+	%	width=0.75\textwidth
+	%	]{\fbox{Click!}}{videos/broken0.swf}
+	%\includemedia[activate=pagevisible]}{}{broken0.swf}
+	%\includemedia[activate=pagevisible]{}{broken1.swf}
 \end{frame}
 
 \begin{frame}
